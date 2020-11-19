@@ -39,7 +39,7 @@ function plotcolor(earthquakesize) {
 // This function will determine the size of each circle
 
 function markerSize(earthquakesize) {
-  if (earthquakesize = 0) {
+  if (earthquakesize < 1) {
     return 1;
   }
   return earthquakesize * 30000;
